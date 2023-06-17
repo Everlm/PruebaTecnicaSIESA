@@ -35,7 +35,7 @@ static void Division()
 
     try
     {
-        Ask_17 ask = new Ask_17();
+        Pregunta_17 ask = new Pregunta_17();
         double resultado = ask.Division(numero1, numero2);
         Console.WriteLine("El resultado de la división es: " + resultado);
     }
@@ -48,20 +48,20 @@ static void Division()
 
 static void Arbol()
 {
-    Ask_19 arbol1 = new Ask_19(4);
+    Pregunta_19 arbol1 = new Pregunta_19(4);
 
-    Ask_19 arbol2 = new Ask_19(4);
-    arbol2.Subarboles.Add(new Ask_19(2));
-    arbol2.Subarboles.Add(new Ask_19(1));
+    Pregunta_19 arbol2 = new Pregunta_19(4);
+    arbol2.Subarboles.Add(new Pregunta_19(2));
+    arbol2.Subarboles.Add(new Pregunta_19(1));
 
-    Ask_19 arbol3 = new Ask_19(4);
-    arbol3.Subarboles.Add(new Ask_19(1));
-    Ask_19 subarbol3 = new Ask_19(2);
-    subarbol3.Subarboles.Add(new Ask_19(3));
+    Pregunta_19 arbol3 = new Pregunta_19(4);
+    arbol3.Subarboles.Add(new Pregunta_19(1));
+    Pregunta_19 subarbol3 = new Pregunta_19(2);
+    subarbol3.Subarboles.Add(new Pregunta_19(3));
     arbol3.Subarboles.Add(subarbol3);
-    Ask_19 subarbol4 = new Ask_19(5);
-    subarbol4.Subarboles.Add(new Ask_19(1));
-    subarbol4.Subarboles.Add(new Ask_19(4));
+    Pregunta_19 subarbol4 = new Pregunta_19(5);
+    subarbol4.Subarboles.Add(new Pregunta_19(1));
+    subarbol4.Subarboles.Add(new Pregunta_19(4));
     arbol3.Subarboles.Add(subarbol4);
 
     ArbolConPeso arbolConPeso1 = new ArbolConPeso(arbol1);
@@ -85,7 +85,7 @@ static void Arbol()
 
 static void Base()
 {
-    Ask_18 convertidor = new Ask_18();
+    Pregunta_18 convertidor = new Pregunta_18();
 
     Console.WriteLine("Ingrese el número:");
     string numero = Console.ReadLine();

@@ -1,6 +1,6 @@
 ﻿namespace PruebaTecnicaSIESA
 {
-    public class Ask_18
+    public class Pregunta_18
     {
         public string ConvertirBase(string numero, int baseOrigen, int baseDestino)
         {

@@ -1,22 +1,22 @@
 ﻿namespace PruebaTecnicaSIESA
 {
-    public class Ask_19
+    public class Pregunta_19
     {
         public int Valor { get; set; }
-        public List<Ask_19> Subarboles { get; set; }
+        public List<Pregunta_19> Subarboles { get; set; }
 
-        public Ask_19(int valor)
+        public Pregunta_19(int valor)
         {
             Valor = valor;
-            Subarboles = new List<Ask_19>();
+            Subarboles = new List<Pregunta_19>();
         }
     }
 
     public class ArbolConPeso
     {
-        public Ask_19 Raiz { get; set; }
+        public Pregunta_19 Raiz { get; set; }
 
-        public ArbolConPeso(Ask_19 raiz)
+        public ArbolConPeso(Pregunta_19 raiz)
         {
             Raiz = raiz;
         }
@@ -26,7 +26,7 @@
             return CalcularPesoRecursivo(Raiz);
         }
 
-        private int CalcularPesoRecursivo(Ask_19 nodo)
+        private int CalcularPesoRecursivo(Pregunta_19 nodo)
         {
             int peso = nodo.Valor;
 
@@ -54,7 +54,7 @@
             return CalcularAlturaRecursivo(Raiz);
         }
 
-        private int CalcularAlturaRecursivo(Ask_19 nodo)
+        private int CalcularAlturaRecursivo(Pregunta_19 nodo)
         {
             if (nodo.Subarboles.Count == 0)
                 return 0;
@@ -71,7 +71,7 @@
             return alturaMaxima + 1;
         }
 
-        private int ContarNodos(Ask_19 nodo)
+        private int ContarNodos(Pregunta_19 nodo)
         {
             if (nodo.Subarboles.Count == 0)
                 return 1;

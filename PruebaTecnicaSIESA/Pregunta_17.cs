@@ -1,6 +1,6 @@
 ﻿namespace PruebaTecnicaSIESA
 {
-    public class Ask_17
+    public class Pregunta_17
     {
         public double Division(int numero1, int numero2)
         {
