@@ -57,7 +57,7 @@
         private int CalcularAlturaRecursivo(Pregunta_19 nodo)
         {
             if (nodo.Subarboles.Count == 0)
-                return 0;
+                return 1;
 
             int alturaMaxima = 0;
 
@@ -86,5 +86,5 @@
             return cantidadNodos;
         }
     }
-    
+
 }
